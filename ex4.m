@@ -52,7 +52,7 @@ pause;
 fprintf('Part 3 : Mencari faktorisasi LU dari matriks A \n');
 [L U] = faktorisasiLU(A)
 fprintf('Memeriksa kembali apakah L x U = A \n');
-if isequal(L*U,A)
+if isequal(round(L*U),A)
 	fprintf('Kode yang anda kerjakan adalah benar \n');	
 else
 	fprintf('Kode yang anda kerjakan adalah masih salah \n');
